@@ -4,3 +4,4 @@ path=$(pwd)
 
 # Home directory
 ln -sf $path/.bashrc $HOME/.bashrc
+ln -sf $path/.zshrc $HOME/.zshrc

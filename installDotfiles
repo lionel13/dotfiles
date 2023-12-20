@@ -1,0 +1,6 @@
+#!/bin/sh
+
+path=$(pwd)
+
+# Home directory
+ln -sf $path/.bashrc $HOME/.bashrc

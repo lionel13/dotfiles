@@ -5,3 +5,10 @@ path=$(pwd)
 # Home directory
 ln -sf $path/.bashrc $HOME/.bashrc
 ln -sf $path/.zshrc $HOME/.zshrc
+
+# Config directories
+[ ! -d $HOME/.config ] && mkdir $HOME/.config
+
+# Alacritty
+[ ! -d $HOME/.config/alacritty ] && mkdir $HOME/.config/alacritty
+ln -sf $path/config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml

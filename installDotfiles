@@ -17,3 +17,6 @@ ln -sf $path/config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.ym
 [ ! -d $HOME/.config/bspwm ] && mkdir $HOME/.config/bspwm
 ln -sf $path/config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
 
+# Sxhkd
+[ ! -d $HOME/.config/sxhkd ] && mkdir $HOME/.config/sxhkd
+ln -sf $path/config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc

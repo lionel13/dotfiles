@@ -9,14 +9,22 @@ ln -sf $path/.zshrc $HOME/.zshrc
 # Config directories
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-# Alacritty
+## Users-dirs
+ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
+ln -sf $path/config/user-dirs.locale $HOME/.config/user-dirs.locale
+
+## Alacritty
 [ ! -d $HOME/.config/alacritty ] && mkdir $HOME/.config/alacritty
 ln -sf $path/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 
-# Bspwm
+## Bspwm
 [ ! -d $HOME/.config/bspwm ] && mkdir $HOME/.config/bspwm
 ln -sf $path/config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
 
-# Sxhkd
+## Sxhkd
 [ ! -d $HOME/.config/sxhkd ] && mkdir $HOME/.config/sxhkd
 ln -sf $path/config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
+
+## Picom
+[ ! -d $HOME/.config/picom ] && mkdir $HOME/.config/picom
+ln -sf $path/config/picom/picom.conf $HOME/.config/picom/picom.conf

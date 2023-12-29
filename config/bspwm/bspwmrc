@@ -5,7 +5,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 setxkbmap -model pc104 -layout us -variant intl
 picom --config $HOME/.config/picom/picom.conf &
 $HOME/.config/polybar/launch.sh &
-feh --bg-fill $HOME/Images/1030909-om-wallpaper-1920x1080-for-xiaomi.jpg
+feh --bg-fill $HOME/Images/background.jpg
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

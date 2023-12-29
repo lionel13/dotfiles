@@ -2,6 +2,8 @@
 
 path=$(pwd)
 
+cp $path/background.jpg $HOME/Images
+
 # Home directory
 ln -sf $path/.bashrc $HOME/.bashrc
 ln -sf $path/.zshrc $HOME/.zshrc

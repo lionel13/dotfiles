@@ -1,0 +1,58 @@
+shell.program = "/usr/bin/zsh"
+
+
+[window]
+
+padding.x = 5
+padding.y = 5
+
+opacity = 0.8
+
+
+[font]
+
+normal.family = "MesloLGS NF" 
+normal.style  = "Regular"
+
+bold.family = "MesloLGS NF"
+bold.style  = "Bold"
+
+italic.family = "MesloLGS NF"
+italic.style  = "Italic"
+
+bold_italic.family = "MesloLGS NF" 
+bold_italic.style  = "Bold Italic"
+
+size = 10.0
+
+
+[colors]
+
+primary.background = "#1d2021"
+primary.foreground = "#d4be98" 
+
+normal.black   = "#32302f" 
+normal.red     = "#ea6962"
+normal.green   = "#a9b665"
+normal.yellow  = "#d8a657"
+normal.blue    = "#7daea3"
+normal.magenta = "#d3869b"
+normal.cyan    = "#89b482"
+normal.white   = "#d4be98"
+
+bright.black   = "#32302f"
+bright.red     = "#ea6962"
+bright.green   = "#a9b665"
+bright.yellow  = "#d8a657"
+bright.blue    = "#7daea3"
+bright.magenta = "#d3869b"
+bright.cyan    = "#89b482"
+bright.white   = "#d4be98"
+
+
+[cursor]
+
+style.shape = "Underline"
+
+
+

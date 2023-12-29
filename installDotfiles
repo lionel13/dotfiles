@@ -11,7 +11,7 @@ ln -sf $path/.zshrc $HOME/.zshrc
 
 # Alacritty
 [ ! -d $HOME/.config/alacritty ] && mkdir $HOME/.config/alacritty
-ln -sf $path/config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+ln -sf $path/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 
 # Bspwm
 [ ! -d $HOME/.config/bspwm ] && mkdir $HOME/.config/bspwm

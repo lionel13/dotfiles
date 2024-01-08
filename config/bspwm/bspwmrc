@@ -5,7 +5,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 setxkbmap -model pc104 -layout us -variant intl
 picom --config $HOME/.config/picom/picom.conf &
 $HOME/.config/polybar/launch.sh &
-feh --bg-fill $HOME/Images/background.jpg
+feh --bg-fill --no-fehbg $HOME/Images/background.jpg
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

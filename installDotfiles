@@ -4,9 +4,8 @@ path=$(pwd)
 
 cp $path/background.jpg $HOME/Images
 
-# Home directory
-ln -sf $path/.bashrc $HOME/.bashrc
-ln -sf $path/.zshrc $HOME/.zshrc
+# HOME Directory
+
 
 # Config directories
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
@@ -14,6 +13,13 @@ ln -sf $path/.zshrc $HOME/.zshrc
 ## Users-dirs
 ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
 ln -sf $path/config/user-dirs.locale $HOME/.config/user-dirs.locale
+
+## Zsh
+ln -sf $path/.zshenv $HOME/.zshenv
+[ ! -d $HOME/.config/zsh ] && mkdir $HOME/.config/zsh 
+ln -sf $path/config/zsh/zshrc $HOME/.config/zsh/.zshrc
+ln -sf $path/config/zsh/zprofile $HOME/.config/zsh/.zprofile
+ln -sf $path/config/zsh/p10k.zsh $HOME/.config/zsh/.p10k.zsh
 
 ## Alacritty
 [ ! -d $HOME/.config/alacritty ] && mkdir $HOME/.config/alacritty
@@ -30,3 +36,9 @@ ln -sf $path/config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
 ## Picom
 [ ! -d $HOME/.config/picom ] && mkdir $HOME/.config/picom
 ln -sf $path/config/picom/picom.conf $HOME/.config/picom/picom.conf
+
+## X11
+[ ! -d $HOME/.config/X11 ] && mkdir $HOME/.config/X11
+ln -sf $path/config/X11/.xinitrc $HOME/.config/X11/.xinitrc
+
+

@@ -18,9 +18,9 @@ ln -sf $path/config/zsh/functions/prompt_purification_setup $HOME/.config/zsh/fu
 ln -sf $path/config/zsh/plugins/archlinux.plugin.zsh $HOME/.config/zsh/plugins/archlinux.plugin.zsh
 ln -sf $path/config/zsh/plugins/git.plugin.zsh $HOME/.config/zsh/plugins/git.plugin.zsh
 
-## X11
-#[ ! -d $HOME/.config/X11 ] && mkdir $HOME/.config/X11
-#ln -sf $path/config/X11/.xinitrc $HOME/.config/X11/.xinitrc
+# X11
+[ ! -d $HOME/.config/X11 ] && mkdir $HOME/.config/X11
+ln -sf $path/config/X11/xinitrc $HOME/.config/X11/.xinitrc
 
 ## Users-dirs
 #ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf

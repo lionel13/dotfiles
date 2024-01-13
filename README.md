@@ -1,5 +1,11 @@
 # my dotfiles
 
+## Xorg
+
+1. Install Xorg packages
+
+    `sudo pacman -S xorg-xinit xorg-server xorg-xsetroot`
+
 ## Zsh
 
 1. install zsh packages

@@ -2,7 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-setxkbmap -model pc104 -layout us -variant intl
+xsetroot -cursor_name left_ptr &
+setxkbmap -model pc104 -layout us -variant intl &
 picom --config $HOME/.config/picom/picom.conf &
 $HOME/.config/polybar/launch.sh &
 feh --bg-fill --no-fehbg $HOME/pics/background.jpg

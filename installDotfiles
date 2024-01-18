@@ -2,10 +2,14 @@
 
 path=$(pwd)
 
-cp $path/background.jpg $HOME/Images
+# Users-dirs
+ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
+#ln -sf $path/config/user-dirs.locale $HOME/.config/user-dirs.locale
+
+xdg-user-dirs-update
 
 # Config directories
-[ ! -d $XDG_CONFIG_HOME ] && mkdir $XDG_CONFIG_HOME
+[ ! -d $HOME/.config ] && mkdir $HOME/.config
 
 # Zsh 
 ln -sf $path/zshenv $HOME/.zshenv
@@ -22,26 +26,20 @@ ln -sf $path/config/zsh/plugins/git.plugin.zsh $HOME/.config/zsh/plugins/git.plu
 [ ! -d $HOME/.config/X11 ] && mkdir $HOME/.config/X11
 ln -sf $path/config/X11/xinitrc $HOME/.config/X11/.xinitrc
 
-## Users-dirs
-#ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
-#ln -sf $path/config/user-dirs.locale $HOME/.config/user-dirs.locale
+# Alacritty
+[ ! -d $HOME/.config/alacritty ] && mkdir $HOME/.config/alacritty
+ln -sf $path/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 
+# Bspwm
+[ ! -d $HOME/.config/bspwm ] && mkdir $HOME/.config/bspwm
+ln -sf $path/config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
 
-## Alacritty
-#[ ! -d $HOME/.config/alacritty ] && mkdir $HOME/.config/alacritty
-#ln -sf $path/config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+# Sxhkd
+[ ! -d $HOME/.config/sxhkd ] && mkdir $HOME/.config/sxhkd
+ln -sf $path/config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
 
-## Bspwm
-#[ ! -d $HOME/.config/bspwm ] && mkdir $HOME/.config/bspwm
-#ln -sf $path/config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
+# Picom
+[ ! -d $HOME/.config/picom ] && mkdir $HOME/.config/picom
+ln -sf $path/config/picom/picom.conf $HOME/.config/picom/picom.conf
 
-## Sxhkd
-#[ ! -d $HOME/.config/sxhkd ] && mkdir $HOME/.config/sxhkd
-#ln -sf $path/config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
-
-## Picom
-#[ ! -d $HOME/.config/picom ] && mkdir $HOME/.config/picom
-#ln -sf $path/config/picom/picom.conf $HOME/.config/picom/picom.conf
-
-
-
+cp $path/background.jpg $HOME/pics

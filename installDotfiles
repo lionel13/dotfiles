@@ -2,16 +2,27 @@
 
 path=$(pwd)
 
-# Users-dirs
-ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
-#ln -sf $path/config/user-dirs.locale $HOME/.config/user-dirs.locale
-
-xdg-user-dirs-update
-
 # Config directories
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-# Zsh 
+# Users-dirs
+[ ! -d $HOME/dwl ] && mkdir $HOME/dwl
+[ ! -d $HOME/doc ] && mkdir $HOME/doc
+[ ! -d $HOME/mus ] && mkdir $HOME/mus
+[ ! -d $HOME/vid ] && mkdir $HOME/vid
+[ ! -d $HOME/pic ] && mkdir $HOME/pic
+ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
+
+xdg-user-dirs-update
+
+
+# Zsh
+[ ! -d $HOME/.local ] && mkdir $HOME/.local
+[ ! -d $HOME/.local/state ] && mkdir $HOME/.local/state
+[ ! -d $HOME/.local/state/zsh ] && mkdir $HOME/.local/state/zsh
+[ ! -d $HOME/.cache ] && mkdir $HOME/.cache
+[ ! -d $HOME/.cache/zsh ] && mkdir $HOME/.cache/zsh
+
 ln -sf $path/zshenv $HOME/.zshenv
 [ ! -d $HOME/.config/zsh ] && mkdir $HOME/.config/zsh 
 ln -sf $path/config/zsh/zshrc $HOME/.config/zsh/.zshrc

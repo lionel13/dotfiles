@@ -55,8 +55,11 @@ ln -sf $path/config/sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
 [ ! -d $HOME/.config/picom ] && mkdir $HOME/.config/picom
 ln -sf $path/config/picom/picom.conf $HOME/.config/picom/picom.conf
 
-
 # Polybar
 [ ! -d $HOME/.config/polybar ] && mkdir $HOME/.config/polybar
 ln -sf $path/config/polybar/config.ini $HOME/.config/polybar/config.ini
 ln -sf $path/config/polybar/launch.sh $HOME/.config/polybar/launch.sh
+
+# neovim
+[ ! -d $HOME/.config/nvim ] && mkdir $HOME/.config/nvim
+ln -sf $path/config/nvim/init.vim $HOME/.config/nvim/init.vim

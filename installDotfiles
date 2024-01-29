@@ -69,3 +69,5 @@ chsh -s /usr/bin/zsh
 # Neofetch
 [ ! -d $HOME/.config/neofetch ] && mkdir $HOME/.config/neofetch
 ln -sf $path/config/neofetch/config.conf $HOME/.config/neofetch
+
+chsh -s /usr/bin/zsh

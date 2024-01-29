@@ -64,3 +64,7 @@ ln -sf $path/config/polybar/launch.sh $HOME/.config/polybar/launch.sh
 # neovim
 [ ! -d $HOME/.config/nvim ] && mkdir $HOME/.config/nvim
 ln -sf $path/config/nvim/init.vim $HOME/.config/nvim/init.vim
+
+# Neofetch
+[ ! -d $HOME/.config/neofetch ] && mkdir $HOME/.config/neofetch
+ln -sf $path/config/neofetch/config.conf $HOME/.config/neofetch

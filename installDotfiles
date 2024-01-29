@@ -11,7 +11,7 @@ path=$(pwd)
 [ ! -d $HOME/mus ] && mkdir $HOME/mus
 [ ! -d $HOME/vid ] && mkdir $HOME/vid
 [ ! -d $HOME/pic ] && mkdir $HOME/pic
-ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
+ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.dirs
 
 xdg-user-dirs-update
 

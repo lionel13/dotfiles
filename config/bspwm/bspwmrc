@@ -6,7 +6,7 @@ xsetroot -cursor_name left_ptr &
 setxkbmap -model pc104 -layout us -variant intl &
 picom --config $HOME/.config/picom/picom.conf &
 $HOME/.config/polybar/launch.sh &
-feh --bg-fill --no-fehbg $HOME/pic/background.jpg
+feh --bg-fill --no-fehbg $HOME/pic/bg/background.jpg
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

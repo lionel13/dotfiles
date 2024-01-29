@@ -16,7 +16,8 @@ ln -sf $path/config/user-dirs.dirs $HOME/.config/user-dirs.conf
 xdg-user-dirs-update
 
 # Background
-cp $path/background.jpg $HOME/pics
+[ ! -d $HOME/pic/bg ] && mkdir $HOME/pic/bg
+cp $path/background.jpg $HOME/pic/bg
 
 # Zsh
 [ ! -d $HOME/.local ] && mkdir $HOME/.local

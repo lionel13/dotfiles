@@ -22,3 +22,16 @@
   `mkdir $HOME/.local/state/zsh`
 
   `mkdir $HOME/.cache/zsh`
+
+## Installation lf
+
+installer lf zathura zathura zathura-pdf-poppler
+installer le package AUR : ctpv-git 
+cp /usr/share/doc/lf/lfrc.example to ~/.config/lf/lfrc
+ajouter les lignes suivantes au fichier ~/.config/lf/lfrc :
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+
+
